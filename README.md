@@ -1,43 +1,44 @@
 Global Human Capital Analysis (1950-2015)
-Project Overview
-This project provides a data-driven exploration of global education trends using the Barro-Lee Dataset. Covering 146 countries over 65 years, the analysis quantifies the evolution of human capital, focusing on Turkey's structural transformation and regional convergence patterns.
+📊 Project Overview
+This project provides a data-driven exploration of global education trends using the Barro-Lee Educational Attainment Dataset. The analysis covers 146 countries over 65 years, focusing on how human capital has deepened across different regions and specifically within Turkey.
 
-Methodology
-The analytical pipeline handles the entire data lifecycle:
+🛠️ Key Features
+Data Wrangling: Automated cleaning of historical panel data, handling decimal inconsistencies and regional mapping.
 
-Data Cleaning: Processed historical panel data, standardized decimal formats, and handled longitudinal data gaps.
+Structural Analysis: Visualizing the transition from 'No Schooling' to 'Tertiary Education' (University level).
 
-Structural Visualization: Tracked the shift from "No Schooling" to "Higher Education" over half a century.
+Regional Benchmarking: Comparing emerging markets against advanced economies to detect "catch-up" effects.
 
-Regional Benchmarking: Measured the "Catch-up Effect" by comparing emerging markets against advanced economies.
+Econometric Modeling: Using OLS Regression to estimate the global time trend while controlling for Regional Fixed Effects.
 
-Econometric Modeling: Implemented an OLS Regression to estimate the global education growth rate while controlling for Regional Fixed Effects.
+📈 Principal Findings
+Global Growth: On average, global schooling years have increased by 0.1 years annually since 1950.
 
-Key Findings
-Education Growth: Globally, average schooling years increase by approximately 0.1 years annually.
+Turkey's Catch-up: Turkey successfully reduced its uneducated population from 78% in 1950 to 4% in 2015, showing a massive leap in human capital deepening.
 
-Turkey Case Study: Successfully reduced the "No Schooling" rate from 78% (1950) to 4% (2015).
+Convergence: While most regions are converging, a significant gap (approx. 5.5 years) remains between Advanced Economies and Sub-Saharan Africa.
 
-Global Gaps: Identified a persistent ~5.5-year gap between Advanced Economies and developing regions.
+💻 Tech Stack
+Language: Python 3.x
 
-Repository Structure
-Education_Analysis.py: Core Python script for analysis and modeling.
+Libraries: Pandas (Data manipulation), Matplotlib/Seaborn (Visualization), Statsmodels (Econometrics)
 
-Education_Data.pdf: Documentation regarding the dataset source.
+📁 Repository Structure
+Education_Analysis.py: The complete analysis pipeline.
 
-results/: Directory containing all visual outputs and statistical summaries.
+Education_Data.pdf: Dataset documentation and sources.
 
-1_regional_trends.png
+results/: Visual exports (PNG) of the analysis.
 
-2_turkey_benchmark.png
+1_regional_trends.png: Regional average schooling years.
 
-3_turkey_structure.png
+2_turkey_benchmark.png: Turkey vs global peers comparison.
 
-6_regression_summary.png
+3_turkey_structure.png: Turkey's educational transformation (Stacked).
 
-Data Source & Citation (APA)
-The analysis is based on the following academic source:
+6_regression_summary.png: OLS regression results and statistics.
 
+📚 Data Source & Citation (APA)
 Barro, R. J., & Lee, J. W. (2013). A new data set of educational attainment in the world, 1950–2010. Journal of Development Economics, 104, 184-198. (Updated v3.0, 2015).
 
 Official Website: barrolee.com
