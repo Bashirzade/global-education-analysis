@@ -5,7 +5,7 @@ import statsmodels.api as sm
 import os
 
 # --- 1. DATA LOADING & CLEANING ---
-path = "/Users/alibashirzade/Downloads/BL_v3_MF1564.csv"
+path = "/BL_v3_MF1564.csv"
 column_names = [
     'Country', 'Year', 'Age_Group', 'Age_To', 'No_Schooling',
     'Primary_Total', 'Primary_Completed', 'Secondary_Total', 'Secondary_Completed',
